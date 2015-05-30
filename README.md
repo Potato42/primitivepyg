@@ -5,4 +5,6 @@ Pyglet is a wonderful Python module for creating graphical applications such as 
 Example of primitivepyg
 * [Source](demo.py)  
 * Result (expanded to fill area):  
+
+
 <img src="demo.bmp" width="100%" alt="Some shapes" title="This is what it looks like!" />
