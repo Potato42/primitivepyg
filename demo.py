@@ -16,7 +16,7 @@ def make_batch(win):
         batch=batch
     )
 
-    # resetting b like we did last time is actually not needed because it will be modified inside the function
+    # resetting the batch like we did last time is actually not needed because it will be modified inside the function
     pp.ellipse(
         (win.width/2, win.height/2), (20, 30),
         fill=pp.colors.aquamarine,
