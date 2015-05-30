@@ -4,22 +4,22 @@ import pyglet as pyg
 def make_batch(win):
     batch = pp.polygon(
         (200,100), (100,400), (5,5), (100,20),
-        fill=0x000066ff,
-        stroke=(0,100,0),
+        fill=0x000066ff, # hex color format
+        stroke=(0,100,0), # tuple color format
         stroke_width=10
     )
 
     batch = pp.polygon(
         (300,200), (400,120), (100,120),
         fill=(255,0,0),
-        stroke=None,
+        stroke=None, # no stroke will be drawn
         batch=batch
     )
 
     # resetting the batch like we did last time is actually not needed because it will be modified inside the function
     pp.ellipse(
         (win.width/2, win.height/2), (20, 30),
-        fill=pp.colors.aquamarine,
+        fill=pp.colors.aquamarine, # X11 color names pythonified
         stroke=pp.colors.blue_violet,
         batch=batch
     )
