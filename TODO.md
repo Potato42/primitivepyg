@@ -2,8 +2,8 @@
 
 ### OpenGL stroke problem 
 Stroke (lines and points) in OpenGL are a pain when you use a width greater than 1 for the following reasons:
-* In some implementations, it is simply impossible to have a width greater than 1.
-* Lines do not join together, so when you make a polygon with a thick stroke, there will be noticable gaps.
+* In some implementations, it is simply impossible to have a width greater than 1.  Most, if not all implementations have some limit to the size you can use.
+* Lines do not join together in line loops, so when you make a polygon with a thick stroke, there will be noticable gaps.
 
 Currently, the second problem is fixed using an ugly hack: inserting points at every intersection, and thus covering the gaps.  This makes the polygons look a bit weird, and cross-implementation support still does not exist.
 
